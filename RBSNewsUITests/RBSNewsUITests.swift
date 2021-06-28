@@ -2,7 +2,7 @@
 //  RBSNewsUITests.swift
 //  RBSNewsUITests
 //
-//  Created by ctsuser1 on 12/10/20.
+//  RBS Tests Project on 12/10/20.
 //
 
 import XCTest
