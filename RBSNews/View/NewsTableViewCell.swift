@@ -21,6 +21,7 @@ class NewsTableViewCell: UITableViewCell {
     func setupNewsCell(source:String?, title:String) {
         self.newsSourceLabel.text = source
         self.newsTitleLabel.text = title
+        
     }
 
     func setupNewsImage(imageURL:String) {

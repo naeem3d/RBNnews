@@ -11,9 +11,8 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var usernameTextField: UITextField!
-    
-    let expectedUsername = "rbs"
-    let expectedPassword = "1234"
+    let login = LongIn()
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,20 +20,14 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func loginButtonTapped(_ sender: UIButton) {
-        guard let username = usernameTextField.text, !username.isEmpty, let password = passwordTextField.text, !password.isEmpty else {
-            Utility.shared.showAlert(self, "Alert!", "Please input credentials.")
-            return
-        }
-        guard expectedUsername == username else {
-            Utility.shared.showAlert(self, "Alert!", "Username is invalid.")
-            return
-        }
-        guard expectedPassword == password else {
-            Utility.shared.showAlert(self, "Alert!", "Password is invalid.")
-           return
-        }
         
+        if let message = login.checkValdity(userName: usernameTextField.text, passwrod: passwordTextField.text){
+            Utility.shared.showAlert(self, "Alert", message)
+            return
+        }
+    
         navigateToHomeScreen()
+       
     }
     
     func navigateToHomeScreen() {

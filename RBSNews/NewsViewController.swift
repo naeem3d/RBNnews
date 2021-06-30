@@ -21,6 +21,8 @@ class NewsViewController: UIViewController {
         newsViewModel?.parseJSON({ [weak self] (news) in
 			self?.articles = news?.articles
 			self?.newsTableView.reloadData()
+           
+          
         })
     }
     
@@ -43,11 +45,13 @@ extension NewsViewController: UITableViewDataSource {
             if let source = article.source,  let title = article.title {
                 let name = source.name
                 cell.setupNewsCell(source: name, title: title)
+                cell.textLabel?.numberOfLines = 0
             }
             if let imageUrl = article.urlToImage {
                 cell.setupNewsImage(imageURL: imageUrl)
             }
         }
+        
         return cell
     }
     
