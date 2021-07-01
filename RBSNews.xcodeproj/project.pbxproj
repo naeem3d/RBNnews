@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		236C6FB8268D6F5A006DAFEF /* loginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236C6FB7268D6F5A006DAFEF /* loginTest.swift */; };
 		23A2BD352689EA0800C776A3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2BD342689EA0800C776A3 /* LoginViewModel.swift */; };
+		23E61C41268E356A0022C5CC /* NewsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E61C40268E35690022C5CC /* NewsViewModelTest.swift */; };
 		97F39A7F2581DD4F009A7925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F39A7E2581DD4F009A7925 /* AppDelegate.swift */; };
 		97F39A812581DD4F009A7925 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F39A802581DD4F009A7925 /* SceneDelegate.swift */; };
 		97F39A832581DD4F009A7925 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F39A822581DD4F009A7925 /* LoginViewController.swift */; };
@@ -49,7 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		236C6FB7268D6F5A006DAFEF /* loginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginTest.swift; sourceTree = "<group>"; };
 		23A2BD342689EA0800C776A3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		23E61C40268E35690022C5CC /* NewsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModelTest.swift; sourceTree = "<group>"; };
 		97F39A7B2581DD4F009A7925 /* RBSNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RBSNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F39A7E2581DD4F009A7925 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97F39A802581DD4F009A7925 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 			children = (
 				97F39A982581DD53009A7925 /* RBSNewsTests.swift */,
 				97F39A9A2581DD53009A7925 /* Info.plist */,
+				236C6FB7268D6F5A006DAFEF /* loginTest.swift */,
+				23E61C40268E35690022C5CC /* NewsViewModelTest.swift */,
 			);
 			path = RBSNewsTests;
 			sourceTree = "<group>";
@@ -348,7 +354,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				97F39B7825821D37009A7925 /* UIImageView+Extensions.swift in Sources */,
+				236C6FB8268D6F5A006DAFEF /* loginTest.swift in Sources */,
 				97F39ACE2581E5C9009A7925 /* News.swift in Sources */,
+				23E61C41268E356A0022C5CC /* NewsViewModelTest.swift in Sources */,
 				97F39B8B25822995009A7925 /* Utility.swift in Sources */,
 				97F39B212581F62F009A7925 /* NewsViewModel.swift in Sources */,
 				97F39B6E258205E1009A7925 /* NewsTableViewCell.swift in Sources */,

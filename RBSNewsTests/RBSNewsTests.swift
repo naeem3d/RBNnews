@@ -18,20 +18,6 @@ class RBSNewsTests: XCTestCase {
     override func tearDownWithError() throws {
     }
 
-    func testNewsModelTotalResults() {
-        newsViewModel.parseJSON { (news) in
-            if let news = news {
-                XCTAssertEqual(news.totalResults, 70, "Total results is not matching!")
-            }
-        }
-    }
-    
-    func testNewsModelArticles() {
-        newsViewModel.parseJSON { (news) in
-            if let news = news, let articles = news.articles {
-                XCTAssertEqual(articles.count, 20, "Articless count is not matching!")
-            }
-        }
-    }
+   
 
 }
