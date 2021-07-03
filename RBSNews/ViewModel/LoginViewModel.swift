@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LongIn {
+class LongInViewModel {
     let expectedUsername = "rbs"
     let expectedPassword = "1234"
    

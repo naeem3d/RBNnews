@@ -10,7 +10,7 @@ import XCTest
 
 class loginTest: XCTestCase {
 
-    let loginviewModel = LongIn()
+    let loginviewModel = LongInViewModel()
 
     var username = "rbs"
     var password = "1234"

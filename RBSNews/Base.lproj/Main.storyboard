@@ -113,7 +113,7 @@
                                                 <constraint firstItem="jdj-wH-2ll" firstAttribute="top" secondItem="vps-K0-8b0" secondAttribute="bottom" constant="5" id="bEy-9b-8Ov"/>
                                                 <constraint firstItem="vps-K0-8b0" firstAttribute="leading" secondItem="q1z-Ml-XLj" secondAttribute="leading" constant="10" id="gnP-46-biB"/>
                                                 <constraint firstItem="vps-K0-8b0" firstAttribute="top" secondItem="q1z-Ml-XLj" secondAttribute="top" constant="11" id="liC-i3-fvD"/>
-                                                <constraint firstItem="kPH-pc-Fyz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vps-K0-8b0" secondAttribute="trailing" constant="20" id="upS-9Q-FOO"/>
+                                                <constraint firstItem="kPH-pc-Fyz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vps-K0-8b0" secondAttribute="trailing" priority="999" constant="20" id="upS-9Q-FOO"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="jdj-wH-2ll" secondAttribute="bottom" constant="5" id="wE1-4N-TNU"/>
                                             </constraints>
                                         </tableViewCellContentView>

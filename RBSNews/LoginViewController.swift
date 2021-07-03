@@ -11,7 +11,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var usernameTextField: UITextField!
-    let login = LongIn()
+    let loginViewModel = LongInViewModel()
    
 
     override func viewDidLoad() {
@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
 
     @IBAction func loginButtonTapped(_ sender: UIButton) {
         
-        if let message = login.checkValdity(userName: usernameTextField.text, passwrod: passwordTextField.text){
+        if let message = loginViewModel.checkValdity(userName: usernameTextField.text, passwrod: passwordTextField.text){
             Utility.shared.showAlert(self, "Alert", message)
             return
         }

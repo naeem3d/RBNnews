@@ -52,10 +52,12 @@ extension NewsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let urlString = newsViewModel.getArticleUrl(for: indexPath.row)
-        let url = URL(string: urlString)
-        let safariViewController = SFSafariViewController(url: url!)
-            present(safariViewController, animated: true, completion: nil)
-            safariViewController.delegate = self
+        if let url = URL(string: urlString){
+            let safariViewController = SFSafariViewController(url: url)
+                present(safariViewController, animated: true, completion: nil)
+                safariViewController.delegate = self
+        }
+        
     }
 }
 
