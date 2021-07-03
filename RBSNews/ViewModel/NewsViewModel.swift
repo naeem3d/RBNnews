@@ -21,8 +21,8 @@ class NewsViewModel {
     }
     
     init() {}
-    func parseJSON(_ completion: @escaping () -> Void) {
-        if let url = Bundle.main.url(forResource: "News", withExtension: "json") {
+    func parseJSON(_ resourceName:String, completion: @escaping () -> Void) {
+        if let url = Bundle.main.url(forResource: resourceName, withExtension: "json") {
             do {
                 let data = try Data(contentsOf: url)
                 let decoder = JSONDecoder()
@@ -32,12 +32,12 @@ class NewsViewModel {
 
                 completion()
             } catch {
+                articles = nil
                 print("error while decoding the JSON data")
                 completion()
             }
         }
     }
-    
     
     func getArticlesData(for row:Int)-> (title:String, imageUrl:String, name:String) {
         

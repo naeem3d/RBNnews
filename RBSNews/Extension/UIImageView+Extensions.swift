@@ -20,12 +20,12 @@ extension UIImageView {
                 let data = data, error == nil,
                 let image = UIImage(data: data)
                 else { return }
-            let link = "\(url)"
-            
-            NewsViewModel.shared.cache.setObject(image, forKey: link as NSString)
-            DispatchQueue.main.async {
+           let link = "\(url)"
+
+           NewsViewModel.shared.cache.setObject(image, forKey: link as NSString)
+           DispatchQueue.main.async {
                 self.image = image
-            }
+           }
              
         }.resume()
     }

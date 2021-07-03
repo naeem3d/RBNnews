@@ -17,10 +17,13 @@ class NewsViewController: UIViewController {
         super.viewDidLoad()
         self.title = "News screen"
         newsViewModel = NewsViewModel()
-        newsViewModel?.parseJSON({ [weak self] in
+        
+        newsViewModel.parseJSON("News") { [weak self] in
             self?.newsTableView.reloadData()
-        })
+        }
+       
     }
+    
 }
 
 extension NewsViewController: UITableViewDataSource {
