@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  RBSNews
 //
-//  Created by ctsuser1 on 12/10/20.
+//  RBS Tests Project on 12/10/20.
 //
 
 import UIKit
@@ -47,7 +47,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
 
         // Save changes in the application's managed object context when the application transitions to the background.
-        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
 
 
