@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         print("I am first function called when user launch app ")
+        print("I am first function called when user launch app ")
+
         return true
     }
 
