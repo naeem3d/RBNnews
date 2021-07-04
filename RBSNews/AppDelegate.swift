@@ -15,6 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        print("main I am first function called when user launch app ")
+        print("main I am first function called when user launch app ")
+         print("main I am first function called when user launch app ")
         return true
     }
 
