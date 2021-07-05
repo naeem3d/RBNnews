@@ -28,7 +28,9 @@ extension UIImageView {
            let link = "\(url)"
             
             if let image  = Cashe.object(forKey: cashekey){
-                self.image = image
+                DispatchQueue.main.async {
+                     self.image = image
+                }
             }
             Cashe.setObject(image, forKey: link as NSString)
            DispatchQueue.main.async {

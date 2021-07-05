@@ -53,13 +53,13 @@ class NewsViewModelTest: XCTestCase {
         resouceName = "NewsFailure"
         newsViewModel.parseJSON(resouceName) { }
      
-        let title2 = newsViewModel.getArticlesData(for: intNum).title
+        
         let urlima2 = newsViewModel.getArticlesData(for: intNum).imageUrl
 
         XCTAssertEqual("", "") 
         XCTAssertTrue(urlima2 == "" )
         
-        let result =   newsViewModel.parseJSON(resouceName) { }
+    
     
     }
     
