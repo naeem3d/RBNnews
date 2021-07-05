@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		236C6FB8268D6F5A006DAFEF /* loginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236C6FB7268D6F5A006DAFEF /* loginTest.swift */; };
+		239BD7E52692A47400AB8EBC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239BD7E42692A47400AB8EBC /* BaseViewController.swift */; };
 		23A2BD352689EA0800C776A3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2BD342689EA0800C776A3 /* LoginViewModel.swift */; };
 		23D850AC268F26BB001A0F8F /* NewsFailure.json in Resources */ = {isa = PBXBuildFile; fileRef = 23D850AB268F26BB001A0F8F /* NewsFailure.json */; };
 		23E61C41268E356A0022C5CC /* NewsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E61C40268E35690022C5CC /* NewsViewModelTest.swift */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		236C6FB7268D6F5A006DAFEF /* loginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginTest.swift; sourceTree = "<group>"; };
+		239BD7E42692A47400AB8EBC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		23A2BD342689EA0800C776A3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		23D850AB268F26BB001A0F8F /* NewsFailure.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NewsFailure.json; sourceTree = "<group>"; };
 		23E61C40268E35690022C5CC /* NewsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModelTest.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				97F39A8A2581DD53009A7925 /* Assets.xcassets */,
 				97F39A8C2581DD53009A7925 /* LaunchScreen.storyboard */,
 				97F39A8F2581DD53009A7925 /* Info.plist */,
+				239BD7E42692A47400AB8EBC /* BaseViewController.swift */,
 			);
 			path = RBSNews;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 			files = (
 				97F39B8A25822995009A7925 /* Utility.swift in Sources */,
 				97F39ACD2581E5C9009A7925 /* News.swift in Sources */,
+				239BD7E52692A47400AB8EBC /* BaseViewController.swift in Sources */,
 				97F39B6D258205E1009A7925 /* NewsTableViewCell.swift in Sources */,
 				97F39B7725821D37009A7925 /* UIImageView+Extensions.swift in Sources */,
 				97F39A832581DD4F009A7925 /* LoginViewController.swift in Sources */,
