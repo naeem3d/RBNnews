@@ -11,6 +11,8 @@ import UIKit
 extension UIImageView {
    
    func downloaded(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
+    let Cashe = NewsViewModel.shared.cache
+    
     guard let url = URL(string: link) else { return }
     let cashekey = NSString(string: "\(link)")
     
@@ -25,10 +27,10 @@ extension UIImageView {
                 else { return }
            let link = "\(url)"
             
-            if let image  = NewsViewModel.shared.cache.object(forKey: cashekey){
+            if let image  = Cashe.object(forKey: cashekey){
                 self.image = image
             }
-           NewsViewModel.shared.cache.setObject(image, forKey: link as NSString)
+            Cashe.setObject(image, forKey: link as NSString)
            DispatchQueue.main.async {
                 self.image = image
            }
